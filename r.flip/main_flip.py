@@ -1,5 +1,4 @@
-# SPECIAL THANKS TO VACLAV PETRAS
-# WHO DEVELOPED THE TESTING FRAMEWORK FOR GRASS GIS KNOWN AS gunittest. But here it is not used.
+
 import unittest
 import grass.pygrass.modules as gmodules
 
@@ -35,7 +34,7 @@ class FlipModuleTestCase(GrassTestCase):
     """Example of test case for a module."""
     
     def test_flag_w(self):
-        """Test to validate the output of r.info using flag "g"
+        """Test to validate the output of r.flip using flag "g"
         """
         # Configure a r.flip flag= "w" test 
         # East-West flip
@@ -45,7 +44,7 @@ class FlipModuleTestCase(GrassTestCase):
         # it is not clear where to store stdout and stderr
         self.assertStdout(actual=module.stdout, reference="r_info_g.ref")
     def test_flag_b(self):
-        """Test to validate the output of r.info using flag "g"
+        """Test to validate the output of r.flip using flag "g"
         """
         # Configure a r.flip flag= "b"test 
         # Both N-S and E-W flip
@@ -55,7 +54,7 @@ class FlipModuleTestCase(GrassTestCase):
         # it is not clear where to store stdout and stderr
         self.assertStdout(actual=module.stdout, reference="r_info_g.ref")
     def test_flag_overwrite(self):
-        """Test to validate the output of r.info using flag "g"
+        """Test to validate the output of r.flip using flag "g"
         """
         # Configure a r.flip flag= "overwrite" test 
         # Allow output files to overwrite existing files
@@ -65,7 +64,7 @@ class FlipModuleTestCase(GrassTestCase):
         # it is not clear where to store stdout and stderr
         self.assertStdout(actual=module.stdout, reference="r_info_g.ref")
     def test_flag_g(self):
-        """Test to validate the output of r.info using flag "g"
+        """Test to validate the output of r.flip using flag "g"
         """
         # Configure a r.flip flag= "help" test 
         # Print usage summary
@@ -75,7 +74,7 @@ class FlipModuleTestCase(GrassTestCase):
         # it is not clear where to store stdout and stderr
         self.assertStdout(actual=module.stdout, reference="r_info_g.ref")
     def test_flag_verbose(self):
-        """Test to validate the output of r.info using flag "g"
+        """Test to validate the output of r.flip using flag "g"
         """
         # Configure a r.flip flag= "verbose" test 
         # Verbose module output
@@ -85,7 +84,7 @@ class FlipModuleTestCase(GrassTestCase):
         # it is not clear where to store stdout and stderr
         self.assertStdout(actual=module.stdout, reference="r_info_g.ref")
     def test_flag_quiet(self):
-        """Test to validate the output of r.info using flag "g"
+        """Test to validate the output of r.flip using flag "g"
         """
         # Configure a r.flip flag="quiet" test 
         # Quiet module output
@@ -95,7 +94,7 @@ class FlipModuleTestCase(GrassTestCase):
         # it is not clear where to store stdout and stderr
         self.assertStdout(actual=module.stdout, reference="r_info_g.ref")
     def test_flag_ui(self):
-        """Test to validate the output of r.info using flag "g"
+        """Test to validate the output of r.flip using flag "g"
         """
         # Configure a r.flip flag="ui" test 
         # Force launching GUI dialog
