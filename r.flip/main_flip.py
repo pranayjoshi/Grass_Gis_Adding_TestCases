@@ -1,5 +1,5 @@
 # SPECIAL THANKS TO VACLAV PETRAS
-# WHO DEVELOPED THE TESTING FRAMEWORK FOR GRASS GIS
+# WHO DEVELOPED THE TESTING FRAMEWORK FOR GRASS GIS KNOWN AS gunittest. But here it is not used.
 import unittest
 import grass.pygrass.modules as gmodules
 
